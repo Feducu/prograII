@@ -4,11 +4,11 @@ public interface PilaTDA {
 	
 	void InicializarPila();
 	
-	void apilar (int x); 
+	void Apilar (int x); 
 	 
-	void desapilar();
+	void Desapilar();
 	 
-	int tope();
+	int Tope();
 	 
 	boolean PilaVacia();
 

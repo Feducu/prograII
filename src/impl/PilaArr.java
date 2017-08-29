@@ -11,36 +11,26 @@ public class PilaArr implements PilaTDA {
 		pila = new int[100];
 		indice=0;
 	}
-
 	
-	public void apilar(int x) {
+	public void Apilar(int x) {
 		// TODO Auto-generated method stub	
-		indice++;
 		pila[indice]=x;
-		
-		
+		indice++;		
 	}
-
 	
-	public void desapilar() {
+	public void Desapilar() {
 		// TODO Auto-generated method stub
-		indice--;
-		
+		indice--;		
 	}
-
 	
-	public int tope() {
+	public int Tope() {
 		// TODO Auto-generated method stub
-		return pila[indice];
+		return pila[indice-1];
 	}
-
 	
 	public boolean PilaVacia() {
 		// TODO Auto-generated method stub
-		if(indice!=0)
-			return false;
-		else
-			return true;
+		return (indice==0);
 	}
 	
 	

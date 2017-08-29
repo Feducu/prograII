@@ -8,7 +8,7 @@ public class TP1	{
 	public static void main(String[] args) {
 		PilaArr p=new PilaArr();
 		p.InicializarPila();
-		p.apilar(5);
+		p.Apilar(5);
 		PilaArr p1=new PilaArr();
 		p1.InicializarPila();
 
@@ -19,8 +19,8 @@ public class TP1	{
 	//EJ1
 	public static void PasarPila(PilaTDA origen, PilaTDA destino){
 		while (!origen.PilaVacia()){
-			destino.apilar(origen.tope());
-			origen.desapilar();
+			destino.Apilar(origen.Tope());
+			origen.Desapilar();
 		}
 	}
 }

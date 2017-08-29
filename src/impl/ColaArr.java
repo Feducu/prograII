@@ -3,35 +3,36 @@ package impl;
 import api.ColaTDA;
 
 public class ColaArr implements ColaTDA {
-
-	@Override
+	int[] a;
+	int indice;
+	
 	public void InicializarCola() {
 		// TODO Auto-generated method stub
-
+		a=new int[100];
+		indice=0;
 	}
 
-	@Override
-	public void acolar(int x) {
+	public void Acolar(int x) {
 		// TODO Auto-generated method stub
-
+		for(int i=indice-1;i>=0;i--)
+			a[i+1] =a[i];
+		a[0]=x;
+		indice++;
 	}
 
-	@Override
-	public void desacolar() {
+	public void Desacolar() {
 		// TODO Auto-generated method stub
-
+		indice--;
 	}
 
-	@Override
 	public boolean ColaVacia() {
 		// TODO Auto-generated method stub
-		return false;
+		return (indice==0);
 	}
 
-	@Override
-	public int primero() {
+	public int Primero() {
 		// TODO Auto-generated method stub
-		return 0;
+		return a[indice-1];
 	}
 
 }
